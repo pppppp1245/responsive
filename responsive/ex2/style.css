@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+1400~1280 데스크탑
+1200~1024 노트북
+1024~768 태블릿
+768~320 모바일*/
+
+body{
+    font-size: 16px;
+}
+
+header{
+    background-color: #b5db5b;
+    padding: 20px 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu img{
+    width: 30px;
+}
+
+.navi{
+    display: flex;
+    gap: 20px;
+}
+
+.menu{
+    display: none;
+}
+
+.kv{
+    background-image: url(../ex2/images/5ce332d3-6d6b-4ee1-a3d3-20e0be501018.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 6.25rem 0;
+    height: 50vh;
+}
+
+.kv-title{
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.kv-title h1{
+    font-size: 3rem;
+}
+
+/* .kv{
+    font-size: 10px
+}
+.kv-title p{
+    font-size: 2em;
+} */
+
+@media(max-width: 1280px){
+
+}
+
+@media(max-width: 1024px){
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navi{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .kv-title h1{
+        font-size: 2rem;
+    }
+    .kv-title p{
+        font-size: 1.5rem;
+    }
+    .kv{
+        height: auto;
+        padding: 8rem 0;
+        /* height: 100vh; */
+    }
+}
+
+@media(max-width: 540px){
+    
+    
+}
